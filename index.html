@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Pale Fire Capital · Investment Strategy &amp; Acquisition Criteria</title>
+<meta name="description" content="Pale Fire Capital fund overview for M&A and acquisition financing partners across Europe: who we are, what we look for, and how we partner.">
+<meta property="og:title" content="Pale Fire Capital · Investment Strategy &amp; Acquisition Criteria">
+<meta property="og:description" content="Fund overview for our M&A and acquisition financing partners across Europe.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://partners.palefire.com/">
+<meta property="og:image" content="https://partners.palefire.com/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%2311253F'/%3E%3Cpath d='M30 8c4 8-10 16-6 28 2.5 7.5 9 12 9 20 7-3 14-10 14-20C47 22 33 18 30 8z' fill='%234DB7E0'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy-deep:#11253F;
+  --navy:#1E2E47;
+  --navy-mid:#364B66;
+  --cyan:#4DB7E0;
+  --cyan-soft:#8FCDE6;
+  --ice:#F1F3F8;
+  --ice-mid:#E2E7F1;
+  --slate:#7A8AA0;
+  --slate-light:#9BB0CC;
+  --green:#4F8A6B;
+  --red:#9E3B3B;
+  --white:#FFFFFF;
+  --serif:"Source Serif 4", Cambria, Georgia, "Times New Roman", serif;
+  --sans:"Inter", Calibri, "Segoe UI", -apple-system, sans-serif;
+  --nav-h:64px;
+  --maxw:1180px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:var(--sans);
+  color:var(--navy-deep);
+  background:var(--white);
+  line-height:1.6;
+  font-size:16px;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+::selection{background:var(--cyan);color:var(--navy-deep)}
+
+/* ---------- progress bar ---------- */
+#progress{
+  position:fixed;top:0;left:0;height:3px;width:0;
+  background:linear-gradient(90deg,var(--cyan),var(--cyan-soft));
+  z-index:200;transition:width .1s linear;
+}
+
+/* ---------- navigation ---------- */
+nav{
+  position:fixed;top:0;left:0;right:0;height:var(--nav-h);
+  display:flex;align-items:center;justify-content:space-between;
+  padding:0 clamp(16px,4vw,48px);
+  z-index:100;
+  background:transparent;
+  transition:background .35s ease, box-shadow .35s ease;
+}
+nav.solid{
+  background:#11253F;
+  box-shadow:0 2px 24px rgba(8,18,32,.35);
+}
+nav::after{
+  content:"";position:absolute;top:0;right:0;width:56px;height:100%;
+  background:linear-gradient(90deg, rgba(17,37,63,0), #11253F);
+  pointer-events:none;opacity:0;transition:opacity .25s;
+}
+nav.scroll-more::after{opacity:1}
+nav .nav-logo img{height:26px;display:block}
+nav ul{
+  display:flex;gap:clamp(10px,2vw,28px);list-style:none;
+  overflow-x:auto;scrollbar-width:none;
+}
+nav ul::-webkit-scrollbar{display:none}
+nav a{
+  color:rgba(255,255,255,.75);text-decoration:none;
+  font-size:13px;font-weight:500;letter-spacing:.04em;
+  white-space:nowrap;padding:6px 2px;
+  border-bottom:2px solid transparent;
+  transition:color .2s, border-color .2s;
+}
+nav a:hover{color:var(--white)}
+nav a.active{color:var(--cyan);border-bottom-color:var(--cyan)}
+nav a.nav-cta{
+  border:1.5px solid var(--cyan);color:var(--cyan);
+  padding:8px 18px;
+  transition:background .2s, color .2s;
+}
+nav a.nav-cta:hover,
+nav a.nav-cta.active{background:var(--cyan);color:var(--navy-deep);border-bottom-color:var(--cyan)}
+
+/* ---------- shared section scaffolding ---------- */
+section{scroll-margin-top:calc(var(--nav-h) + 8px)}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 clamp(20px,5vw,48px)}
+.kicker{
+  font-size:12px;font-weight:700;letter-spacing:.22em;
+  text-transform:uppercase;color:var(--cyan);margin-bottom:18px;
+}
+.kicker .knum{opacity:.5;margin-right:10px}
+.only-print{display:none}
+.sec-title{
+  font-family:var(--serif);font-weight:600;
+  font-size:clamp(30px,4.4vw,48px);line-height:1.15;
+  letter-spacing:-.01em;margin-bottom:14px;
+}
+.sec-sub{
+  font-family:var(--serif);font-style:italic;font-weight:400;
+  font-size:clamp(17px,2vw,21px);color:var(--slate);
+  margin-bottom:0;
+}
+.rule{
+  width:56px;height:3px;background:var(--cyan);
+  border:none;margin:26px 0 0;
+}
+.sec-head{margin-bottom:clamp(36px,5vw,64px)}
+
+/* ---------- reveal animation ---------- */
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .7s ease, transform .7s ease;transition-delay:var(--d,0s)}
+.reveal.visible{opacity:1;transform:none}
+@media (prefers-reduced-motion: reduce){
+  .reveal{opacity:1;transform:none;transition:none}
+  html{scroll-behavior:auto}
+}
+
+/* ---------- hero ---------- */
+#hero{
+  min-height:100svh;
+  background:var(--navy-deep);
+  position:relative;overflow:hidden;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  text-align:center;color:var(--white);
+  padding:calc(var(--nav-h) + 24px) 20px 80px;
+}
+.flame-glow{position:absolute;border-radius:50%;filter:blur(90px);pointer-events:none}
+.glow-1{
+  width:680px;height:680px;left:-180px;bottom:-260px;
+  background:radial-gradient(circle, rgba(77,183,224,.34), transparent 65%);
+  animation:drift1 14s ease-in-out infinite alternate;
+}
+.glow-2{
+  width:560px;height:560px;right:-160px;top:-200px;
+  background:radial-gradient(circle, rgba(54,75,102,.85), transparent 65%);
+  animation:drift2 18s ease-in-out infinite alternate;
+}
+.glow-3{
+  width:420px;height:420px;right:14%;bottom:-180px;
+  background:radial-gradient(circle, rgba(77,183,224,.16), transparent 60%);
+  animation:drift1 22s ease-in-out infinite alternate-reverse;
+}
+@keyframes drift1{from{transform:translate(0,0) scale(1)}to{transform:translate(60px,-40px) scale(1.12)}}
+@keyframes drift2{from{transform:translate(0,0) scale(1)}to{transform:translate(-50px,40px) scale(1.08)}}
+.facet{position:absolute;background:rgba(255,255,255,.022);pointer-events:none}
+.facet-1{width:46%;height:120%;left:30%;top:-10%;transform:skewX(-14deg)}
+.facet-2{width:30%;height:120%;right:-6%;top:-10%;transform:skewX(-14deg);background:rgba(255,255,255,.014)}
+#hero .hero-inner{position:relative;z-index:2;display:flex;flex-direction:column;align-items:center}
+#hero .hero-logo{width:clamp(250px,38vw,430px);height:auto;margin-bottom:clamp(36px,6vh,64px)}
+#hero .kicker{margin-bottom:22px;font-size:13px}
+#hero h1{
+  font-family:var(--serif);font-style:italic;font-weight:400;
+  font-size:clamp(21px,3vw,32px);line-height:1.45;
+  color:rgba(255,255,255,.92);max-width:760px;
+}
+#hero .rule{margin:34px auto 0}
+.hero-btn{
+  display:inline-block;margin-top:38px;
+  border:1.5px solid rgba(255,255,255,.4);color:var(--white);
+  font-weight:600;font-size:14px;letter-spacing:.05em;
+  padding:13px 30px;text-decoration:none;
+  transition:border-color .2s, color .2s, transform .2s;
+}
+.hero-btn:hover{border-color:var(--cyan);color:var(--cyan);transform:translateY(-2px)}
+.hero-meta{
+  position:absolute;bottom:28px;left:clamp(20px,4vw,48px);
+  font-size:13px;letter-spacing:.08em;color:var(--slate-light);z-index:2;
+}
+.scroll-cue{
+  position:absolute;bottom:26px;left:50%;transform:translateX(-50%);
+  z-index:2;opacity:.7;
+}
+.scroll-cue span{
+  display:block;width:22px;height:36px;border:2px solid rgba(255,255,255,.4);
+  border-radius:12px;position:relative;
+}
+.scroll-cue span::after{
+  content:"";position:absolute;top:6px;left:50%;width:4px;height:8px;
+  margin-left:-2px;border-radius:2px;background:var(--cyan);
+  animation:cue 1.8s ease-in-out infinite;
+}
+@keyframes cue{0%{transform:translateY(0);opacity:1}70%{transform:translateY(12px);opacity:0}100%{transform:translateY(0);opacity:0}}
+
+/* ---------- mission (dark) ---------- */
+#mission{
+  background:linear-gradient(180deg,var(--navy-deep) 0%,#16294a 100%);
+  color:var(--white);
+  padding:clamp(90px,13vh,150px) 0;
+  position:relative;overflow:hidden;
+}
+#mission .facet-m{position:absolute;width:40%;height:140%;right:-8%;top:-20%;transform:skewX(-14deg);background:rgba(255,255,255,.018)}
+#mission .statement{
+  font-family:var(--serif);font-weight:600;
+  font-size:clamp(34px,5.6vw,62px);line-height:1.18;letter-spacing:-.01em;
+  max-width:900px;
+}
+#mission .statement em{font-style:normal;color:var(--cyan)}
+#mission .rule{margin:36px 0}
+#mission p.body{
+  max-width:820px;font-size:clamp(16px,1.6vw,18.5px);line-height:1.75;
+  color:rgba(255,255,255,.82);
+}
+
+/* ---------- light sections ---------- */
+.section-light{background:var(--white);padding:clamp(80px,11vh,130px) 0}
+.section-ice{background:var(--ice);padding:clamp(80px,11vh,130px) 0}
+
+/* ---------- who we are: cards ---------- */
+.pillar-grid{
+  display:grid;grid-template-columns:repeat(4,1fr);gap:18px;
+}
+.pillar{
+  background:var(--white);border-left:3px solid var(--cyan);
+  padding:30px 26px 28px;
+  box-shadow:0 1px 4px rgba(17,37,63,.06);
+  transition:transform .25s ease, box-shadow .25s ease;
+}
+.pillar:hover{transform:translateY(-5px);box-shadow:0 14px 34px rgba(17,37,63,.12)}
+.pillar h3{
+  font-family:var(--serif);font-weight:600;font-size:21px;line-height:1.25;
+  margin-bottom:12px;
+}
+.pillar p{font-size:14.5px;color:#3d4f66;line-height:1.65}
+.impact-band{
+  margin-top:18px;background:var(--ice-mid);
+  border-left:3px solid var(--navy-deep);
+  padding:26px 30px;
+}
+.impact-band h3{
+  font-family:var(--serif);font-weight:600;font-size:21px;margin-bottom:8px;
+}
+.impact-band p{font-size:15px;color:#3d4f66;max-width:980px}
+
+/* ---------- advantage rows ---------- */
+.adv-list{display:flex;flex-direction:column;gap:14px}
+.adv-row{
+  display:grid;grid-template-columns:320px 1fr;gap:28px;align-items:start;
+  background:var(--white);border-left:3px solid var(--navy-deep);
+  padding:26px 30px;
+  box-shadow:0 1px 4px rgba(17,37,63,.06);
+  transition:transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+}
+.adv-row:hover{transform:translateX(6px);border-left-color:var(--cyan);box-shadow:0 10px 28px rgba(17,37,63,.10)}
+.adv-row h3{font-family:var(--serif);font-weight:600;font-size:21px;line-height:1.3}
+.adv-row p{font-size:15px;color:#3d4f66}
+
+/* ---------- succession band ---------- */
+#succession{
+  background:linear-gradient(180deg,#16294a 0%,var(--navy-deep) 100%);
+  color:var(--white);
+  padding:clamp(80px,11vh,130px) 0;
+  position:relative;overflow:hidden;
+}
+#succession .glow-s{
+  position:absolute;width:580px;height:580px;right:-180px;top:-220px;
+  background:radial-gradient(circle, rgba(77,183,224,.18), transparent 62%);
+  filter:blur(80px);pointer-events:none;
+}
+#succession .facet-s{position:absolute;width:38%;height:140%;left:-6%;top:-20%;transform:skewX(-14deg);background:rgba(255,255,255,.018)}
+#succession .statement{
+  font-family:var(--serif);font-weight:600;
+  font-size:clamp(30px,4.6vw,52px);line-height:1.18;letter-spacing:-.01em;
+  max-width:880px;
+}
+#succession p.body{
+  max-width:780px;font-size:clamp(16px,1.6vw,18px);line-height:1.75;
+  color:rgba(255,255,255,.82);margin-top:26px;
+}
+#succession .closing{
+  font-family:var(--serif);font-style:italic;
+  font-size:clamp(17px,1.9vw,21px);color:var(--cyan-soft);margin-top:30px;
+}
+
+/* ---------- criteria ---------- */
+#criteria{position:relative}
+.crit-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.crit-card{
+  background:var(--white);border-top:3px solid var(--cyan);
+  padding:28px 26px 26px;
+  box-shadow:0 1px 4px rgba(17,37,63,.07);
+  transition:transform .25s ease, box-shadow .25s ease;
+  display:flex;flex-direction:column;
+}
+.crit-card:hover{transform:translateY(-5px);box-shadow:0 16px 36px rgba(17,37,63,.13)}
+.crit-label{
+  font-size:11px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;
+  color:var(--cyan);margin-bottom:14px;
+}
+.crit-value{
+  font-family:var(--serif);font-weight:600;
+  font-size:clamp(23px,2.2vw,27px);line-height:1.2;
+  margin-bottom:12px;letter-spacing:-.01em;
+}
+.crit-card p{font-size:14px;color:#3d4f66;line-height:1.62}
+
+/* ---------- how we partner ---------- */
+.prin-list{display:flex;flex-direction:column;gap:14px}
+.prin-row{
+  display:grid;grid-template-columns:72px 300px 1fr;gap:26px;align-items:start;
+  background:var(--white);
+  padding:24px 28px 24px 0;
+  box-shadow:0 1px 4px rgba(17,37,63,.06);
+  overflow:hidden;
+  transition:transform .25s ease, box-shadow .25s ease;
+}
+.prin-row:hover{transform:translateX(6px);box-shadow:0 10px 28px rgba(17,37,63,.10)}
+.prin-num{
+  background:var(--navy-deep);color:var(--white);
+  font-family:var(--serif);font-weight:700;font-size:30px;
+  align-self:stretch;display:flex;align-items:center;justify-content:center;
+  min-height:84px;
+}
+.prin-row h3{font-family:var(--serif);font-weight:600;font-size:21px;line-height:1.3;padding-top:18px}
+.prin-row p{font-size:15px;color:#3d4f66;padding-top:18px;padding-bottom:14px}
+
+/* ---------- shortlist ---------- */
+.short-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;align-items:stretch}
+.short-card{
+  background:var(--white);padding:30px 32px 26px;
+  box-shadow:0 1px 4px rgba(17,37,63,.07);
+  transition:transform .25s ease, box-shadow .25s ease;
+}
+.short-card:hover{transform:translateY(-5px);box-shadow:0 16px 36px rgba(17,37,63,.13)}
+.short-card.pursue{border-top:3px solid var(--green)}
+.short-card.pass{border-top:3px solid var(--red)}
+.short-label{
+  font-size:11px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;
+  margin-bottom:10px;
+}
+.pursue .short-label{color:var(--green)}
+.pass .short-label{color:var(--red)}
+.short-card h3{
+  font-family:var(--serif);font-weight:600;font-size:24px;margin-bottom:18px;
+}
+.short-card ul{list-style:none}
+.short-card li{
+  font-size:14.5px;color:#3d4f66;line-height:1.6;
+  padding:9px 0 9px 22px;position:relative;
+  border-top:1px solid var(--ice-mid);
+}
+.short-card li:first-child{border-top:none}
+.short-card li::before{
+  content:"";position:absolute;left:2px;top:17px;
+  width:7px;height:7px;
+}
+.pursue li::before{background:var(--green)}
+.pass li::before{background:var(--red)}
+
+/* ---------- contact ---------- */
+#contact{
+  background:linear-gradient(180deg,#16294a 0%,var(--navy-deep) 55%);
+  color:var(--white);
+  padding:clamp(90px,13vh,150px) 0 0;
+  position:relative;overflow:hidden;
+}
+#contact .glow-c{
+  position:absolute;width:760px;height:760px;left:50%;top:-340px;margin-left:-380px;
+  background:radial-gradient(circle, rgba(77,183,224,.16), transparent 62%);
+  filter:blur(80px);pointer-events:none;
+}
+#contact .statement{
+  font-family:var(--serif);font-weight:600;
+  font-size:clamp(32px,5vw,56px);line-height:1.2;letter-spacing:-.01em;
+  max-width:880px;
+}
+#contact p.body{
+  max-width:760px;font-size:clamp(16px,1.6vw,18px);line-height:1.7;
+  color:rgba(255,255,255,.82);margin-top:26px;
+}
+.cta{
+  display:inline-block;margin-top:38px;
+  background:var(--cyan);color:var(--navy-deep);
+  font-weight:600;font-size:16px;letter-spacing:.01em;
+  padding:16px 34px;text-decoration:none;
+  transition:background .2s, transform .2s, box-shadow .2s;
+  box-shadow:0 6px 24px rgba(77,183,224,.3);
+}
+.cta:hover{background:var(--cyan-soft);transform:translateY(-2px);box-shadow:0 10px 32px rgba(77,183,224,.42)}
+.contact-grid{
+  margin-top:clamp(50px,8vh,80px);
+  background:rgba(255,255,255,.045);
+  display:grid;grid-template-columns:repeat(3,1fr);gap:0;
+  border-left:3px solid var(--cyan);
+}
+.contact-cell{padding:28px 32px}
+.contact-cell .crit-label{margin-bottom:8px}
+.contact-cell a, .contact-cell span{
+  font-family:var(--serif);font-size:clamp(17px,1.8vw,21px);
+  color:var(--white);text-decoration:none;
+}
+.contact-cell a:hover{color:var(--cyan)}
+.copy-btn{
+  background:none;border:none;cursor:pointer;padding:4px;margin-left:10px;
+  vertical-align:middle;color:var(--cyan);opacity:.75;
+  position:relative;transition:opacity .2s;
+}
+.copy-btn:hover{opacity:1}
+.copy-btn svg{width:16px;height:16px;display:block}
+.copy-feedback{
+  position:absolute;left:50%;top:-30px;transform:translateX(-50%);
+  background:var(--cyan);color:var(--navy-deep);
+  font-family:var(--sans);font-size:11px;font-weight:600;
+  padding:4px 10px;white-space:nowrap;
+  opacity:0;pointer-events:none;transition:opacity .2s;
+}
+.copy-btn.copied .copy-feedback{opacity:1}
+footer{
+  margin-top:clamp(60px,9vh,90px);
+  border-top:1px solid rgba(255,255,255,.12);
+  padding:30px 0 36px;
+}
+footer .wrap{display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap}
+footer img{height:22px;opacity:.9}
+footer .meta{font-size:12.5px;letter-spacing:.06em;color:var(--slate-light)}
+
+/* ---------- print ---------- */
+@media print{
+  #progress, nav, .scroll-cue, .flame-glow, .facet, .facet-m, .glow-c,
+  .hero-btn, .copy-btn, .cta{display:none!important}
+  .reveal{opacity:1!important;transform:none!important}
+  .only-screen{display:none!important}
+  .only-print{display:block!important}
+  section{padding:36px 0!important}
+  #hero{min-height:auto!important;padding:44px 0 20px!important}
+  #hero, #mission, #succession, #contact{background:#fff!important;color:var(--navy-deep)!important}
+  #hero h1{color:var(--navy-deep)}
+  #mission p.body, #succession p.body, #contact p.body{color:#3d4f66!important}
+  #succession .closing{color:var(--navy-mid)}
+  .glow-s, .facet-s{display:none!important}
+  .hero-meta{position:static;margin-top:16px;color:var(--slate)}
+  .contact-grid{background:#f4f6fa!important;margin-top:28px}
+  .contact-cell a, .contact-cell span{color:var(--navy-deep)!important}
+  footer{margin-top:32px;border-top-color:#d8dfeb}
+  footer .meta{color:#5d6b80}
+  .pillar, .crit-card, .adv-row, .prin-row, .short-card, .impact-band{
+    box-shadow:none!important;outline:1px solid #e2e7f1;
+    page-break-inside:avoid;
+  }
+  .adv-row:hover, .prin-row:hover, .pillar:hover, .crit-card:hover, .short-card:hover{transform:none}
+  .sec-head{margin-bottom:28px}
+}
+
+/* ---------- responsive ---------- */
+@media (max-width:1020px){
+  .pillar-grid{grid-template-columns:repeat(2,1fr)}
+  .crit-grid{grid-template-columns:repeat(2,1fr)}
+  .adv-row{grid-template-columns:240px 1fr}
+  .prin-row{grid-template-columns:64px 220px 1fr}
+}
+@media (max-width:720px){
+  .pillar-grid,.crit-grid,.short-grid{grid-template-columns:1fr}
+  .adv-row{grid-template-columns:1fr;gap:8px;padding:22px 24px}
+  .prin-row{grid-template-columns:56px 1fr;gap:18px}
+  .prin-row p{grid-column:2;padding-top:0;margin-top:-6px}
+  .prin-row h3{padding-top:14px}
+  .prin-num{font-size:24px;min-height:64px}
+  .contact-grid{grid-template-columns:1fr}
+  .contact-cell{padding:20px 24px}
+  nav .nav-logo img{height:22px}
+  nav ul a:not(.nav-cta){padding:12px 4px}
+  .copy-btn{padding:10px}
+  .hero-meta{display:none}
+}
+</style>
+</head>
+<body>
+
+<div id="progress"></div>
+
+<nav id="nav" aria-label="Section navigation">
+  <a class="nav-logo" href="#hero" aria-label="Pale Fire Capital, back to top">
+    <img src="assets/logo-white.png" alt="Pale Fire Capital">
+  </a>
+  <ul>
+    <li><a href="#mission">Mission</a></li>
+    <li><a href="#who-we-are">Who we are</a></li>
+    <li><a href="#advantage">Advantage</a></li>
+    <li><a href="#criteria">Criteria</a></li>
+    <li><a href="#partnership">Partnership</a></li>
+    <li><a href="#shortlist">Shortlist</a></li>
+    <li><a class="nav-cta" href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- ============ HERO ============ -->
+<section id="hero">
+  <div class="flame-glow glow-1"></div>
+  <div class="flame-glow glow-2"></div>
+  <div class="flame-glow glow-3"></div>
+  <div class="facet facet-1"></div>
+  <div class="facet facet-2"></div>
+  <div class="hero-inner">
+    <img class="hero-logo only-screen" src="assets/logo-white.png" alt="Pale Fire Capital">
+    <img class="hero-logo only-print" src="assets/logo-dark.png" alt="Pale Fire Capital">
+    <div class="kicker">Investment Strategy &amp; Acquisition Criteria</div>
+    <h1>For our M&amp;A and acquisition financing partners across Europe</h1>
+    <hr class="rule">
+    <a class="hero-btn" href="#criteria">What we look for&nbsp;&nbsp;↓</a>
+  </div>
+  <div class="hero-meta">Prague&nbsp;&nbsp;·&nbsp;&nbsp;2026</div>
+  <div class="scroll-cue" aria-hidden="true"><span></span></div>
+</section>
+
+<!-- ============ MISSION ============ -->
+<section id="mission">
+  <div class="facet-m"></div>
+  <div class="wrap">
+    <div class="kicker reveal"><span class="knum">01 ·</span>Mission</div>
+    <div class="statement reveal" style="--d:.08s">We turn local potential<br>into <em>global success</em>.</div>
+    <hr class="rule reveal" style="--d:.16s">
+    <p class="body reveal" style="--d:.22s">We accelerate growth by combining patient, long-term capital with operational and technological DNA. We are not just investors. We are fair partners with an entrepreneurial heart and real business experience. We build market leaders whose success rests on solid values and dynamic growth.</p>
+  </div>
+</section>
+
+<!-- ============ WHO WE ARE ============ -->
+<section id="who-we-are" class="section-ice">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="kicker reveal"><span class="knum">02 ·</span>Positioning</div>
+      <h2 class="sec-title reveal" style="--d:.06s">Who we are</h2>
+      <p class="sec-sub reveal" style="--d:.12s">Where we play, and why we win</p>
+    </div>
+    <div class="pillar-grid">
+      <div class="pillar reveal" style="--d:0s">
+        <h3>Fair &amp; Evergreen Capital</h3>
+        <p>Evergreen, long-term capital. We maximise long-term enterprise value and partner where our values align.</p>
+      </div>
+      <div class="pillar reveal" style="--d:.08s">
+        <h3>Growth &amp; Scale</h3>
+        <p>We seek and build growth stories with regional leadership and global ambition.</p>
+      </div>
+      <div class="pillar reveal" style="--d:.16s">
+        <h3>Entrepreneurial Edge</h3>
+        <p>Proven operating know-how, strong networks and entrepreneurial drive, not corporate process.</p>
+      </div>
+      <div class="pillar reveal" style="--d:.24s">
+        <h3>Tech Native</h3>
+        <p>Technology, AI and digitalisation are not add-ons: they are part of our operating DNA.</p>
+      </div>
+    </div>
+    <div class="impact-band reveal" style="--d:.1s">
+      <h3>Impact</h3>
+      <p>We feel a strong civic responsibility to the places where we live and invest, proving that European companies can become global leaders.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ADVANTAGE ============ -->
+<section id="advantage" class="section-light">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="kicker reveal"><span class="knum">03 ·</span>The Pale Fire Capital Advantage</div>
+      <h2 class="sec-title reveal" style="--d:.06s">Why you win with us</h2>
+      <p class="sec-sub reveal" style="--d:.12s">Five reasons sellers, founders and lenders choose Pale Fire Capital</p>
+    </div>
+    <div class="adv-list">
+      <div class="adv-row reveal">
+        <h3>Evergreen horizon</h3>
+        <p>No predetermined exit timeline. We hold for as long as the story continues to compound and we can add value. We build strong and healthy companies that last decades and lead in their markets.</p>
+      </div>
+      <div class="adv-row reveal" style="--d:.06s">
+        <h3>Long-term fair partnership</h3>
+        <p>We are entrepreneurs and long-term fair partners, not a finance-only fund. We back founders on trust and shared values, actively helping management to scale, grow and face challenges of global market.</p>
+      </div>
+      <div class="adv-row reveal" style="--d:.12s">
+        <h3>Speed &amp; decision-making</h3>
+        <p>Decisions in days, not months. You negotiate directly with the principals: the people who allocate their own capital.</p>
+      </div>
+      <div class="adv-row reveal" style="--d:.18s">
+        <h3>Resilience in a tougher environment</h3>
+        <p>We help portfolio companies navigate macro and geopolitical volatility, protect margins, and keep gaining market share.</p>
+      </div>
+      <div class="adv-row reveal" style="--d:.24s">
+        <h3>Operational &amp; tech edge</h3>
+        <p>We accelerate growth through digital, AI and technology, supported by an in-house playbook that complements management's execution.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SUCCESSION BAND ============ -->
+<section id="succession" aria-label="Succession">
+  <div class="glow-s"></div>
+  <div class="facet-s"></div>
+  <div class="wrap">
+    <div class="kicker reveal">Succession</div>
+    <div class="statement reveal" style="--d:.06s">The right partner for family successions.</div>
+    <p class="body reveal" style="--d:.12s">A generation of European founders is deciding who will carry their life's work forward. We have built and scaled companies ourselves, so we offer what a life's work deserves: evergreen capital with no exit deadline, continuity for the team and the brand, and a hands-on partner who helps the company grow beyond its founder.</p>
+    <p class="body reveal" style="--d:.18s">We are entrepreneurs at heart, and our mission is to help European heroes become global leaders. We know what it takes to build a company that lasts, and we are ready to navigate a fast-moving world of technology, AI and macroeconomic change.</p>
+    <p class="closing reveal" style="--d:.24s">Succession mandates are our priority.</p>
+  </div>
+</section>
+
+<!-- ============ CRITERIA ============ -->
+<section id="criteria" class="section-ice">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="kicker reveal"><span class="knum">04 ·</span>Acquisition Criteria</div>
+      <h2 class="sec-title reveal" style="--d:.06s">What we look for</h2>
+      <p class="sec-sub reveal" style="--d:.12s">Our investment sweet spot. Please bring us deals that match these parameters.</p>
+    </div>
+    <div class="crit-grid">
+      <div class="crit-card reveal" style="--d:0s">
+        <div class="crit-label">Geography</div>
+        <div class="crit-value">CEE &amp; DACH core</div>
+        <p>Core: Czechia, Slovakia, Poland, Germany, Austria, Switzerland. Selective across the rest of Europe: France, the UK, Benelux, Nordics and rest of CEE.</p>
+      </div>
+      <div class="crit-card reveal" style="--d:.07s">
+        <div class="crit-label">Ticket Size</div>
+        <div class="crit-value">EUR 15–80m equity</div>
+        <p>EV €20–120m (indicative, not hard limits). Plus acquisition financing for platform builds with bolt-on capacity.</p>
+      </div>
+      <div class="crit-card reveal" style="--d:.14s">
+        <div class="crit-label">EBITDA</div>
+        <div class="crit-value">EUR 4–25m</div>
+        <p>Established, healthy, growing companies. Profitable, with proven unit economics and scalable margin.</p>
+      </div>
+      <div class="crit-card reveal" style="--d:.07s">
+        <div class="crit-label">Stake</div>
+        <div class="crit-value">Majority, open to minority</div>
+        <p>Majority preferred, ideally close to 100%. Open to a significant minority in exceptional businesses where founders want to stay invested and keep building with us. Buyouts, MBO / MBI, founder partnerships, succession.</p>
+      </div>
+      <div class="crit-card reveal" style="--d:.14s">
+        <div class="crit-label">Filter</div>
+        <div class="crit-value">Quality first, sector second</div>
+        <p>Quality of business and growth potential are the primary filter: we focus on traditional manufacturing and high value-added services where we can apply our technological and strategic edge. AI lens: invest where AI is a tailwind, pass where it erodes the moat.</p>
+      </div>
+      <div class="crit-card reveal" style="--d:.21s">
+        <div class="crit-label">Target Traits</div>
+        <div class="crit-value">Pricing power. Recurring revenue.</div>
+        <p>Resilient demand. Strong management. Operating leverage and platform potential. Long-term, evergreen hold.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ HOW WE PARTNER ============ -->
+<section id="partnership" class="section-light">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="kicker reveal"><span class="knum">05 ·</span>How We Partner</div>
+      <h2 class="sec-title reveal" style="--d:.06s">Active partnership with management</h2>
+      <p class="sec-sub reveal" style="--d:.12s">Our four operating principles for working with portfolio companies</p>
+    </div>
+    <div class="prin-list">
+      <div class="prin-row reveal">
+        <div class="prin-num">1</div>
+        <h3>Deep understanding first</h3>
+        <p>We invest the time to understand product, market and customer before forming a view. Our decisions are grounded in data, not assumptions.</p>
+      </div>
+      <div class="prin-row reveal" style="--d:.06s">
+        <div class="prin-num">2</div>
+        <h3>Constructive challenge</h3>
+        <p>We ask the hard questions and surface blind spots: the role of a board partner that genuinely contributes to strategic decisions. We strive to add value and provide new perspectives.</p>
+      </div>
+      <div class="prin-row reveal" style="--d:.12s">
+        <div class="prin-num">3</div>
+        <h3>Strategic active ownership</h3>
+        <p>We help define the strategic agenda (product strategy, M&amp;A, key hires) and entrust operational execution to a strong, autonomous management team.</p>
+      </div>
+      <div class="prin-row reveal" style="--d:.18s">
+        <div class="prin-num">4</div>
+        <h3>More than capital</h3>
+        <p>We accelerate growth through digital, AI and technology, international expansion (CEE → DACH/EU/global), M&amp;A roll-ups and cross-portfolio synergies. Value-add where it genuinely accelerates the company.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SHORTLIST ============ -->
+<section id="shortlist" class="section-ice">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="kicker reveal"><span class="knum">06 ·</span>Working with Advisors &amp; Financing Partners</div>
+      <h2 class="sec-title reveal" style="--d:.06s">What we'd love to see on your shortlist</h2>
+      <p class="sec-sub reveal" style="--d:.12s">Where we engage quickly, and what helps us move within days</p>
+    </div>
+    <div class="short-grid">
+      <div class="short-card pursue reveal">
+        <div class="short-label">What We Pursue</div>
+        <h3>Bring us these</h3>
+        <ul>
+          <li>Founder-led succession in CEE and DACH, plus selective situations across the rest of Europe (France, UK, Benelux, Nordics)</li>
+          <li>Established, healthy, growing companies with pricing power, recurring revenue and resilient demand</li>
+          <li>Profitable, growing businesses, ideally with double-digit growth or clear organic / international growth headroom, EUR 4m+ EBITDA, with a regional-leadership thesis</li>
+          <li>Carve-outs from corporates where speed and partnership matter more than headline price</li>
+          <li>Platform builds and bolt-ons: buy-and-build where compounding is the thesis</li>
+        </ul>
+      </div>
+      <div class="short-card pass reveal" style="--d:.1s">
+        <div class="short-label">Where We Pass</div>
+        <h3>To save you time</h3>
+        <ul>
+          <li>Pure rescues: restructuring, turnarounds, distressed; startups, pre-revenue / pre-profit</li>
+          <li>Sub-scale assets below our €15m equity-cheque floor (unless flagged as a bolt-on)</li>
+          <li>Capex-heavy businesses without growth or with weak cash conversion</li>
+          <li>Commodity production or services without pricing power or a defensible competitive edge</li>
+          <li>Businesses dependent on government contracts (B2G); single-customer concentration without pricing power</li>
+          <li>Real estate development, gambling; AI- or cheap-import-vulnerable industries without a defensible moat</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section id="contact">
+  <div class="glow-c"></div>
+  <div class="wrap">
+    <div class="kicker reveal"><span class="knum">07 ·</span>Let's Talk</div>
+    <div class="statement reveal" style="--d:.06s">We move fast on the right opportunity.</div>
+    <p class="body reveal" style="--d:.12s">Send us a teaser, an IM, or just a thesis on a target. We will respond within 48 hours.</p>
+    <a class="cta reveal" style="--d:.18s" href="mailto:deals@palefire.com">Send us an opportunity&nbsp;&nbsp;→</a>
+    <div class="contact-grid reveal" style="--d:.1s">
+      <div class="contact-cell">
+        <div class="crit-label">Deal Origination</div>
+        <a href="mailto:deals@palefire.com">deals@palefire.com</a><button class="copy-btn" type="button" data-copy="deals@palefire.com" aria-label="Copy email address" title="Copy email address"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg><span class="copy-feedback">Copied</span></button>
+      </div>
+      <div class="contact-cell">
+        <div class="crit-label">Website</div>
+        <a href="https://www.palefirecapital.com" target="_blank" rel="noopener">www.palefirecapital.com</a>
+      </div>
+      <div class="contact-cell">
+        <div class="crit-label">Office</div>
+        <span>Prague, Czechia</span>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="wrap">
+      <img class="only-screen" src="assets/logo-white.png" alt="Pale Fire Capital">
+      <img class="only-print" src="assets/logo-dark.png" alt="Pale Fire Capital" style="height:22px">
+      <div class="meta">Fund Overview&nbsp;&nbsp;·&nbsp;&nbsp;For European Partners&nbsp;&nbsp;·&nbsp;&nbsp;Prague&nbsp;&nbsp;·&nbsp;&nbsp;2026</div>
+    </div>
+  </footer>
+</section>
+
+<script>
+(function(){
+  var nav = document.getElementById('nav');
+  var progress = document.getElementById('progress');
+  var hero = document.getElementById('hero');
+
+  function onScroll(){
+    var y = window.scrollY || document.documentElement.scrollTop;
+    var h = document.documentElement.scrollHeight - window.innerHeight;
+    progress.style.width = (h > 0 ? (y / h) * 100 : 0) + '%';
+    if (y > hero.offsetHeight - 80) { nav.classList.add('solid'); }
+    else if (y > 40) { nav.classList.add('solid'); }
+    else { nav.classList.remove('solid'); }
+  }
+  window.addEventListener('scroll', onScroll, {passive:true});
+  onScroll();
+
+  // nav overflow hint (mobile): fade on right edge until scrolled to the end
+  var navUl = document.querySelector('nav ul');
+  function navOverflow(){
+    var more = navUl.scrollWidth - navUl.clientWidth - navUl.scrollLeft > 6;
+    nav.classList.toggle('scroll-more', more);
+  }
+  navUl.addEventListener('scroll', navOverflow, {passive:true});
+  window.addEventListener('resize', navOverflow);
+  navOverflow();
+
+  // reveal on scroll
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); }
+    });
+  }, {threshold:.12, rootMargin:'0px 0px -40px 0px'});
+  document.querySelectorAll('.reveal').forEach(function(el){ io.observe(el); });
+
+  // copy to clipboard
+  document.querySelectorAll('.copy-btn').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var text = btn.getAttribute('data-copy');
+      function done(){
+        btn.classList.add('copied');
+        setTimeout(function(){ btn.classList.remove('copied'); }, 1600);
+      }
+      function fallback(){
+        var ta = document.createElement('textarea');
+        ta.value = text;
+        ta.style.position = 'fixed'; ta.style.opacity = '0';
+        document.body.appendChild(ta);
+        ta.select();
+        try { document.execCommand('copy'); } catch(e){}
+        document.body.removeChild(ta);
+        done();
+      }
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).then(done, fallback);
+      } else { fallback(); }
+    });
+  });
+
+  // scroll-spy
+  var links = Array.prototype.slice.call(document.querySelectorAll('nav ul a'));
+  var sections = links.map(function(a){ return document.querySelector(a.getAttribute('href')); });
+  var spy = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if (e.isIntersecting) {
+        links.forEach(function(a){ a.classList.remove('active'); });
+        var idx = sections.indexOf(e.target);
+        if (idx >= 0) links[idx].classList.add('active');
+      }
+    });
+  }, {rootMargin:'-35% 0px -55% 0px'});
+  sections.forEach(function(s){ if (s) spy.observe(s); });
+})();
+</script>
+
+</body>
+</html>
