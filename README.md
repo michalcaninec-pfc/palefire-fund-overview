@@ -12,4 +12,4 @@ Edit `index.html` / `assets/`, commit, and push to `main`. GitHub Pages redeploy
 
 ## DNS
 
-`partners.palefire.com` is a `CNAME` → `majklcan.github.io` (managed by the PFC DNS admin). GitHub provisions the Let's Encrypt cert automatically once that record resolves.
+`partners.palefire.com` is a `CNAME` → `palefire-capital.github.io` (managed by the PFC DNS admin). GitHub provisions the Let's Encrypt cert automatically once that record resolves.
