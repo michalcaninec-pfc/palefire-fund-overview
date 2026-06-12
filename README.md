@@ -12,4 +12,4 @@ Edit `index.html` / `assets/`, commit, and push to `main`. GitHub Pages redeploy
 
 ## DNS
 
-`partners.palefire.com` is a `CNAME` → `palefire-capital.github.io` (managed by the PFC DNS admin). GitHub provisions the Let's Encrypt cert automatically once that record resolves.
+`partners.palefire.com` is a `CNAME` → `michalcaninec-pfc.github.io` (managed by the PFC DNS admin). GitHub provisions the Let's Encrypt cert automatically once that record resolves. (Historically pointed at `palefire-capital.github.io` while the repo briefly lived under that org; all `*.github.io` names resolve to the same Pages IPs and GitHub routes by the custom-domain claim, so the record kept working through the move.)
