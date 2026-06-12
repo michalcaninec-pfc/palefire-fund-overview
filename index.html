@@ -260,6 +260,34 @@ section{scroll-margin-top:calc(var(--nav-h) + 8px)}
 .adv-row h3{font-family:var(--serif);font-weight:600;font-size:21px;line-height:1.3}
 .adv-row p{font-size:15px;color:#3d4f66}
 
+/* ---------- press / seen from the outside ---------- */
+.press-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.press-card{
+  background:var(--white);border-left:3px solid var(--cyan);
+  padding:28px 30px 24px;
+  box-shadow:0 1px 4px rgba(17,37,63,.06);
+  display:flex;flex-direction:column;
+  transition:transform .25s ease, box-shadow .25s ease;
+}
+.press-card:hover{transform:translateY(-5px);box-shadow:0 14px 34px rgba(17,37,63,.12)}
+.press-outlet{
+  font-size:11px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;
+  color:var(--cyan);margin-bottom:12px;
+}
+.press-quote{
+  font-family:var(--serif);font-style:italic;
+  font-size:17.5px;line-height:1.55;color:var(--navy-deep);
+  margin-bottom:8px;
+}
+.press-note{font-size:11.5px;color:var(--slate);margin-bottom:10px}
+.press-card p.press-text{font-size:15px;color:#3d4f66;line-height:1.65;margin-bottom:16px}
+.press-link{
+  margin-top:auto;
+  font-size:13.5px;font-weight:600;color:#1F6FA8;text-decoration:none;
+  letter-spacing:.02em;
+}
+.press-link:hover{color:var(--navy-deep)}
+
 /* ---------- succession band ---------- */
 #succession{
   background:linear-gradient(180deg,#16294a 0%,var(--navy-deep) 100%);
@@ -448,7 +476,7 @@ footer .meta{font-size:12.5px;letter-spacing:.06em;color:var(--slate-light)}
   .contact-cell a, .contact-cell span{color:var(--navy-deep)!important}
   footer{margin-top:32px;border-top-color:#d8dfeb}
   footer .meta{color:#5d6b80}
-  .pillar, .crit-card, .adv-row, .prin-row, .short-card, .impact-band{
+  .pillar, .crit-card, .adv-row, .prin-row, .short-card, .impact-band, .press-card{
     box-shadow:none!important;outline:1px solid #e2e7f1;
     page-break-inside:avoid;
   }
@@ -464,7 +492,7 @@ footer .meta{font-size:12.5px;letter-spacing:.06em;color:var(--slate-light)}
   .prin-row{grid-template-columns:64px 220px 1fr}
 }
 @media (max-width:720px){
-  .pillar-grid,.crit-grid,.short-grid{grid-template-columns:1fr}
+  .pillar-grid,.crit-grid,.short-grid,.press-grid{grid-template-columns:1fr}
   .adv-row{grid-template-columns:1fr;gap:8px;padding:22px 24px}
   .prin-row{grid-template-columns:56px 1fr;gap:18px}
   .prin-row p{grid-column:2;padding-top:0;margin-top:-6px}
@@ -484,13 +512,14 @@ footer .meta{font-size:12.5px;letter-spacing:.06em;color:var(--slate-light)}
 <div id="progress"></div>
 
 <nav id="nav" aria-label="Section navigation">
-  <a class="nav-logo" href="#hero" aria-label="Pale Fire Capital, back to top">
+  <a class="nav-logo" href="https://palefirecapital.com/en/" target="_blank" rel="noopener" aria-label="Pale Fire Capital website">
     <img src="assets/logo-white.png" alt="Pale Fire Capital">
   </a>
   <ul>
     <li><a href="#mission">Mission</a></li>
     <li><a href="#who-we-are">Who we are</a></li>
     <li><a href="#advantage">Advantage</a></li>
+    <li><a href="#press">Press</a></li>
     <li><a href="#criteria">Criteria</a></li>
     <li><a href="#partnership">Partnership</a></li>
     <li><a href="#shortlist">Shortlist</a></li>
@@ -506,7 +535,7 @@ footer .meta{font-size:12.5px;letter-spacing:.06em;color:var(--slate-light)}
   <div class="facet facet-1"></div>
   <div class="facet facet-2"></div>
   <div class="hero-inner">
-    <img class="hero-logo only-screen" src="assets/logo-white.png" alt="Pale Fire Capital">
+    <a href="https://palefirecapital.com/en/" target="_blank" rel="noopener" aria-label="Pale Fire Capital website"><img class="hero-logo only-screen" src="assets/logo-white.png" alt="Pale Fire Capital"></a>
     <img class="hero-logo only-print" src="assets/logo-dark.png" alt="Pale Fire Capital">
     <div class="kicker">Investment Strategy &amp; Acquisition Criteria</div>
     <h1>For our M&amp;A and acquisition financing partners across Europe</h1>
@@ -556,7 +585,7 @@ footer .meta{font-size:12.5px;letter-spacing:.06em;color:var(--slate-light)}
     </div>
     <div class="impact-band reveal" style="--d:.1s">
       <h3>Impact</h3>
-      <p>Our mission is to make companies, teams, people and regions stronger than we found them. This shapes how we invest, partner and act in society.</p>
+      <p>Our mission is to make companies, teams, people and regions stronger than we found them.<br>This shapes how we invest, partner and act in society.</p>
     </div>
   </div>
 </section>
@@ -594,18 +623,51 @@ footer .meta{font-size:12.5px;letter-spacing:.06em;color:var(--slate-light)}
   </div>
 </section>
 
+<!-- ============ PRESS / SEEN FROM THE OUTSIDE ============ -->
+<section id="press" class="section-ice">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="kicker reveal"><span class="knum">04 ·</span>Seen from the Outside</div>
+      <h2 class="sec-title reveal" style="--d:.06s">What others write about us</h2>
+      <p class="sec-sub reveal" style="--d:.12s">The best way to judge how we invest is from the outside: the companies we have backed, the businesses we have built, and what independent media wrote about them.</p>
+    </div>
+    <div class="press-grid">
+      <div class="press-card reveal">
+        <div class="press-outlet">SeznamZprávy</div>
+        <p class="press-text">A new chapter for Pale Fire Capital's private equity strategy: up to EUR 400m over five years for companies at the intersection of technology, AI and traditional industries.</p>
+        <a class="press-link" href="https://www.seznamzpravy.cz/clanek/ekonomika-firmy-elitni-cesky-fond-prijima-krskova-odchovance-na-nove-nakupy-da-10-miliard-303124" target="_blank" rel="noopener">Read article (Czech) →</a>
+      </div>
+      <div class="press-card reveal" style="--d:.07s">
+        <div class="press-outlet">CzechCrunch</div>
+        <div class="press-quote">"The Rouvy story is an iconic example of how a Czech company can grow into a globally confident player."</div>
+        <p class="press-text">From Vimperk to 300,000+ riders worldwide.</p>
+        <a class="press-link" href="https://cc.cz/cykloaplikace-z-vimperku-pohltila-konkurenci-ve-svete-ted-americane-kupuji-ji-pouziva-ji-300-tisic-lidi/" target="_blank" rel="noopener">Read article (Czech) →</a>
+      </div>
+      <div class="press-card reveal" style="--d:.14s">
+        <div class="press-outlet">Forbes</div>
+        <p class="press-text">Dušan Šenkypl on transforming Groupon from the inside: hands-on ownership at a NASDAQ-listed company.</p>
+        <a class="press-link" href="https://forbes.cz/cesta-do-mysli-podnikatele-roku-dusan-senkypl-popisuje-zmeny-v-grouponu-pfc-i-sobe/" target="_blank" rel="noopener">Read article (Czech) →</a>
+      </div>
+      <div class="press-card reveal" style="--d:.21s">
+        <div class="press-outlet">Hospodářské noviny</div>
+        <p class="press-text">A profile interview with partner Jan Barta: on long-term responsibility and the mark an investor should leave behind.</p>
+        <a class="press-link" href="https://palefirecapital.com/velky-profilovy-rozhovor-s-nasim-partnerem-janem-bartou-nejuspesnejsi-investor-ceska-a-jeho-dobrosvet/" target="_blank" rel="noopener">Read article (Czech) →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- ============ SUCCESSION BAND ============ -->
 <section id="succession" aria-label="Succession">
   <div class="glow-s"></div>
   <div class="facet-s"></div>
   <div class="wrap">
     <div class="kicker reveal">Succession</div>
-    <div class="statement reveal" style="--d:.06s">The succession partner for founder-built companies.</div>
-    <p class="body reveal" style="--d:.12s">A generation of European founders is deciding who will carry their life's work forward, and who will grow the company without losing what made it valuable. That is where we see our role and priority.</p>
+    <div class="statement reveal" style="--d:.06s">The right partner for family successions</div>
+    <p class="body reveal" style="--d:.12s">A generation of European founders is deciding who will carry their life's work forward, and who will grow the company without losing what made it valuable. Succession does not always mean stepping away: sometimes it means bringing in a partner with the capital and operating expertise to help the company compete on a bigger stage. That is where we see our role.</p>
     <p class="body reveal" style="--d:.18s">We have built and scaled companies ourselves, so we offer what a life's work deserves: respect, time, no exit deadline, and continuity for the team, the brand and the region. We stay hands-on, helping the company grow into its next chapter.</p>
-    <p class="body reveal" style="--d:.24s">Succession does not always mean stepping away. Sometimes it means bringing in a partner with the capital and operating expertise to help the company compete on a bigger stage.</p>
-    <p class="body reveal" style="--d:.3s">We are entrepreneurs at heart. We know what it takes to build a company that lasts, and we are ready to navigate a fast-moving world of technology, AI and macroeconomic change.</p>
-    <p class="closing reveal" style="--d:.36s">Succession mandates are our priority.</p>
+    <p class="body reveal" style="--d:.24s">We are entrepreneurs at heart. We know what it takes to build a company that lasts, and we are ready to navigate a fast-moving world of technology, AI and macroeconomic change.</p>
+    <p class="closing reveal" style="--d:.3s">Succession mandates are our priority.</p>
   </div>
 </section>
 
@@ -613,7 +675,7 @@ footer .meta{font-size:12.5px;letter-spacing:.06em;color:var(--slate-light)}
 <section id="criteria" class="section-ice">
   <div class="wrap">
     <div class="sec-head">
-      <div class="kicker reveal"><span class="knum">04 ·</span>Acquisition Criteria</div>
+      <div class="kicker reveal"><span class="knum">05 ·</span>Acquisition Criteria</div>
       <h2 class="sec-title reveal" style="--d:.06s">What we look for</h2>
       <p class="sec-sub reveal" style="--d:.12s">Our investment sweet spot. Please bring us deals that match these parameters.</p>
     </div>
@@ -656,7 +718,7 @@ footer .meta{font-size:12.5px;letter-spacing:.06em;color:var(--slate-light)}
 <section id="partnership" class="section-light">
   <div class="wrap">
     <div class="sec-head">
-      <div class="kicker reveal"><span class="knum">05 ·</span>How We Partner</div>
+      <div class="kicker reveal"><span class="knum">06 ·</span>How We Partner</div>
       <h2 class="sec-title reveal" style="--d:.06s">Active partnership with management</h2>
       <p class="sec-sub reveal" style="--d:.12s">Our four operating principles for working with portfolio companies</p>
     </div>
@@ -689,7 +751,7 @@ footer .meta{font-size:12.5px;letter-spacing:.06em;color:var(--slate-light)}
 <section id="shortlist" class="section-ice">
   <div class="wrap">
     <div class="sec-head">
-      <div class="kicker reveal"><span class="knum">06 ·</span>Working with Advisors &amp; Financing Partners</div>
+      <div class="kicker reveal"><span class="knum">07 ·</span>Working with Advisors &amp; Financing Partners</div>
       <h2 class="sec-title reveal" style="--d:.06s">What we'd love to see on your shortlist</h2>
       <p class="sec-sub reveal" style="--d:.12s">Where we engage quickly, and what helps us move within days</p>
     </div>
@@ -725,7 +787,7 @@ footer .meta{font-size:12.5px;letter-spacing:.06em;color:var(--slate-light)}
 <section id="contact">
   <div class="glow-c"></div>
   <div class="wrap">
-    <div class="kicker reveal"><span class="knum">07 ·</span>Let's Talk</div>
+    <div class="kicker reveal"><span class="knum">08 ·</span>Let's Talk</div>
     <div class="statement reveal" style="--d:.06s">We move fast on the right opportunity.</div>
     <p class="body reveal" style="--d:.12s">Send us a teaser, an IM, or just a thesis on a target. We will respond within 48 hours.</p>
     <a class="cta reveal" style="--d:.18s" href="mailto:deals@palefire.com">Send us an opportunity&nbsp;&nbsp;→</a>
